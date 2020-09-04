@@ -1,0 +1,12 @@
+// List all categories
+GET https://localhost:5001/v1/categories HTTP/1.1
+
+###
+
+// Create categorie
+POST https://localhost:5001/v1/categories HTTP/1.1
+content-type: application/json
+
+{
+  "title": "Categoria 3"
+}

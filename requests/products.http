@@ -1,0 +1,25 @@
+// List all products
+GET https://localhost:5001/v1/products HTTP/1.1
+
+###
+
+// List a product by their id's
+GET https://localhost:5001/v1/products/5 HTTP/1.1
+
+###
+
+// List all products of a categorie
+GET https://localhost:5001/v1/products/categories/2 HTTP/1.1
+
+###
+
+// Create product 
+POST https://localhost:5001/v1/products HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "produto 5",
+  "description": "descrição",
+  "price": 1299,
+  "categoryId": 3
+}
